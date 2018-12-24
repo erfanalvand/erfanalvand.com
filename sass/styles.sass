@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani')
+@import resetsass
+@import variable
+
+body 
+    background-color: $firstColor
+    text-transform: uppercase
+    font-family: $fontFamily
+
+.button
+    background: $firstColor
+    box-shadow: 0 7px 26px 0 $shadowColor
+    font-family: Rajdhani-Medium
+    font-size: 17px
+    color: $Text
+    letter-spacing: 1.8px
+    display: inline-block
+    width: 328px
+    border-radius: 9px
+    margin-top: 20px
+    transition-duration: 0.5s
+    &:hover
+        background: $buttonHover
+        transition-duration: 0.3s
+
+div
+    span
+        line-height: 72px
+
+.vertical 
+    position: absolute
+    left: 0
+    right: 0
+    top: 50%
+    margin-top: -220px
+
+.container 
+    text-align: center
+
+.myname
+    color: $Text
+    font-size: 59px
+    font-family: Rajdhani-Light
+    letter-spacing: -1.4px
+    line-height: 45px
+    margin-top: 20px
+
+.mytitle
+    font-family: Rajdhani-Medium
+    font-size: 24px
+    color: $secoundColor
+    letter-spacing: 13.39px
+    margin-right: -14px
+    display: inline-block
+
+@media (max-width: $firstBreak)
+    .myname
+        font-size: 45px
+    .mytitle
+        font-size: 23px
+        letter-spacing: 7.6px
+        margin-right: -8px
+        marign-top: -2px
+    .button
+        width: 256px
+    .vertical
+        margin-top: -210px
