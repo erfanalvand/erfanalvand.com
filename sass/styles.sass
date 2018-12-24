@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Rajdhani')
 @import resetsass
 @import variable
+@import fonts
 
 body 
     background-color: $firstColor
     text-transform: uppercase
-    font-family: $fontFamily
 
 .button
     background: $firstColor
     box-shadow: 0 7px 26px 0 $shadowColor
-    font-family: Rajdhani-Medium
+    font-family: $fontFamily
+    font-weight: 500
     font-size: 17px
     color: $Text
     letter-spacing: 1.8px
@@ -40,13 +40,15 @@ div
 .myname
     color: $Text
     font-size: 59px
-    font-family: Rajdhani-Light
+    font-family: ErfanAlvandStyle-name
+    font-weight: 300
     letter-spacing: -1.4px
     line-height: 45px
     margin-top: 20px
 
 .mytitle
-    font-family: Rajdhani-Medium
+    font-family: $fontFamily
+    font-weight: 500
     font-size: 24px
     color: $secoundColor
     letter-spacing: 13.39px
